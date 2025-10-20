@@ -16,7 +16,7 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
 
 - **User Management:** Admins can manage registered users.
 - **Product Management:** Add, edit, or remove products.
-- **Order Management:** Review all orders, total revenue, and order counts.
+- **Order Management:** Review all orders.
 - **Analytics:**  
   - Visualizes **historical revenue trends**.
   - **Predicts future revenue** for the next few months using a **Python-based polynomial regression model**.
@@ -28,11 +28,11 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
 
 ### Products Page
 
-![Products Page](./screenshots/products.png)
+![Products Page](https://imgur.com/IWO7d5Y)
 
 ### Analytics Page
 
-![Analytics Page](./screenshots/analytics.png)
+![Analytics Page](https://imgur.com/ewkMc9z)
 
 ---
 
