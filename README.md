@@ -28,7 +28,7 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
 
 ### Products Page
 
-![Products Page](https://imgur.com/IWO7d5Y)
+![Products Page](https://i.imgur.com/IWO7d5Y.png)
 
 ### Analytics Page
 
