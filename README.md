@@ -32,7 +32,7 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
 
 ### Analytics Page
 
-![Analytics Page](https://imgur.com/ewkMc9z)
+![Analytics Page](https://i.imgur.com/ewkMc9z.png)
 
 ---
 
