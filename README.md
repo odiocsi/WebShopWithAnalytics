@@ -1,4 +1,4 @@
-# MySiteName
+# WebShopWithAnalytics
 
 A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, and **React**, allowing users to browse products, manage a cart, place orders, and for admins to monitor analytics.
 
@@ -21,8 +21,6 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
   - Visualizes **historical revenue trends**.
   - **Predicts future revenue** for the next few months using a **Python-based polynomial regression model**.
   - Interactive charts built with `recharts`.
-
-> ⚠️ Note: The AI prediction shows **revenue trends only** — it no longer suggests purchase quantities.
 
 ---
 
@@ -47,11 +45,43 @@ A simple **e-commerce web application** built with **Laravel**, **Inertia.js**, 
 - **Database:** MySQL
 
 ---
-
 ## Setup
 
-1. Clone the repository:
-
 ```bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/mysitename.git
 cd mysitename
+
+# 2. Backend (PHP / Laravel)
+composer install
+cp .env.example .env
+php artisan key:generate
+# Update .env with database credentials, APP_NAME, and optionally PYTHON_PATH
+
+# 3. Frontend (React / Inertia.js / TailwindCSS)
+npm install
+npm run dev   # for development
+npm run build # for production
+
+# 4. Database
+php artisan migrate --seed
+# Creates tables (users, products, orders, etc.) and seeds example data
+
+# 5. Python environment (AI Revenue Prediction)
+python3 --version  # ensure Python 3 is installed
+python3 -m venv venv
+# Linux / macOS:
+source venv/bin/activate
+# Windows:
+# venv\Scripts\activate
+pip install numpy
+
+# Test the Python prediction script
+python predict.py "1000,1200,1100" 3
+# Should return JSON with predicted_revenues and revenue_increase_percent
+
+# 6. Run the application
+php artisan serve
+npm run dev
+# Open http://localhost:8000 in your browser
+
